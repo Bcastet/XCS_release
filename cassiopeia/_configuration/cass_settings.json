@@ -1,0 +1,24 @@
+{
+    "global": {
+        "version_from_match": "patch",
+        "default_region": "EUW"
+    },
+    "plugins": {},
+    "pipeline": {
+        "Cache": {},
+        "SimpleKVDiskStore": {
+            "package": "cassiopeia_diskstore",
+            "path": "E:\\KVStore-Coaching"
+        },
+        "DDragon": {},
+        "RiotAPI": {
+            "api_key": "RIOT_API_KEY"
+        }
+    },
+    "logging": {
+        "print_calls": true,
+        "print_riot_api_key": false,
+        "default": "WARNING",
+        "core": "WARNING"
+    }
+}
